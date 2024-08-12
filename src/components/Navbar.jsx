@@ -2,7 +2,7 @@ import { Link, Outlet } from "react-router-dom";
 import logo from "../assets/logo.svg";
 import { BiMenuAltRight } from "react-icons/bi";
 import { IoClose } from "react-icons/io5";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 export default function Navbar() {
@@ -13,6 +13,20 @@ export default function Navbar() {
       setOpenMenu(false);
     }
   };
+
+  useEffect(() => {
+    if (openMenu) {
+      window.onscroll = () => {
+        window.scrollTo(0, 0);
+      };
+    } else {
+      window.onscroll = null;
+    }
+
+    return () => {
+      window.onscroll = null;
+    };
+  }, [openMenu]);
 
   return (
     <>
@@ -29,7 +43,7 @@ export default function Navbar() {
         className="flex m-auto items-center justify-between container px-4 pb-4 mt-4"
       >
         <Link to={"/"}>
-          <img src={logo} alt="Figma Land Logo" />
+          <img src={logo} alt="Figma Land Logo" className="w-36 lg:w-56" />
         </Link>
 
         <ul className="hidden lg:flex gap-7 xl:gap-10 2xl:gap-12 font-medium">
@@ -48,10 +62,10 @@ export default function Navbar() {
         </ul>
 
         <div className="flex items-center gap-7">
-          <button className="text-xl relative overflow-hidden group py-2 px-5 border">
+          <button className="text-xl relative overflow-hidden group py-1 lg:py-2 px-3 lg:px-5 border">
             <Link to={"/login"} className="">
               <div className="absolute w-full h-full -top-full right-0 group-hover:top-0 transition-all bg-white" />
-              <span className="relative text-white group-hover:text-black">
+              <span className="relative text-sm lg:text-base text-white group-hover:text-black">
                 Login
               </span>
             </Link>

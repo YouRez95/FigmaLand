@@ -9,7 +9,7 @@ import Testimonials from "./components/Testimonials";
 
 export default function App() {
   return (
-    <main className="mx-auto bg-[#181818]">
+    <main className="mx-auto bg-[#181818] overflow-x-hidden">
       <Home />
       <Features />
       <Contents />
