@@ -13,9 +13,9 @@ This is the landing page for **FigmaLand**, The landing page is designed to be s
 
 ## Technologies Used
 
-- **React**
-- **Tailwind CSS**
-- **FramerMotion**
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![FramerMotion](https://img.shields.io/badge/Framer-black?style=for-the-badge&logo=framer&logoColor=blue)
 
 ## Installation
 
@@ -45,3 +45,7 @@ You can use this landing page as a template or starting point for your own proje
 For any questions or feedback, please contact me at [younesselalouani1995@gmail.com].
 
 ## Screenshots
+
+<img width="1918" alt="Screen Shot 2024-08-12 at 3 59 32 PM" src="https://github.com/user-attachments/assets/6384f357-accd-412e-b8cf-a16dcd583111">
+
+<img width="571" alt="Screen Shot 2024-08-12 at 4 05 55 PM" src="https://github.com/user-attachments/assets/8c678a61-0aed-47db-af4e-7a260f722eee">
