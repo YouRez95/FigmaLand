@@ -48,7 +48,7 @@ export default function Gallery() {
         keystroke away.
       </motion.p>
 
-      <div className="grid gap-4">
+      <div className="grid gap-4 h-fit">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 w-[60vw] lg:w-auto justify-center max-w-[300px] lg:max-w-none lg:flex-row">
           <motion.img
             initial={{
@@ -65,7 +65,7 @@ export default function Gallery() {
             viewport={{ once: true, amount: 0.8 }}
             src={gallery1phone}
             alt="gallery"
-            className="rounded-lg object-cover h-full"
+            className="rounded-lg object-cover h-full max-h-[300px]"
           />
           <motion.img
             initial={{
@@ -82,7 +82,7 @@ export default function Gallery() {
             viewport={{ once: true, amount: 0.8 }}
             src={gallery2phone}
             alt="gallery"
-            className="rounded-lg object-cover h-full"
+            className="rounded-lg object-cover h-full max-h-[300px]"
           />
           <motion.img
             initial={{
@@ -99,7 +99,7 @@ export default function Gallery() {
             viewport={{ once: true, amount: 0.8 }}
             src={gallery3phone}
             alt="gallery"
-            className="rounded-lg object-cover h-full"
+            className="rounded-lg object-cover h-full max-h-[300px]"
           />
           <motion.img
             initial={{
@@ -116,7 +116,7 @@ export default function Gallery() {
             viewport={{ once: true, amount: 0.8 }}
             src={gallery4phone}
             alt="gallery"
-            className="rounded-lg object-cover h-full"
+            className="rounded-lg object-cover h-full max-h-[300px]"
           />
         </div>
 
@@ -136,7 +136,7 @@ export default function Gallery() {
             viewport={{ once: true, amount: 0.8 }}
             src={gallery1des}
             alt=""
-            className="col-span-2 rounded-lg h-full object-cover"
+            className="col-span-2 rounded-lg h-full object-cover max-h-[500px]"
           />
           <motion.img
             initial={{
@@ -153,7 +153,7 @@ export default function Gallery() {
             viewport={{ once: true, amount: 0.8 }}
             src={gallery2des}
             alt=""
-            className="rounded-lg h-full object-cover"
+            className="rounded-lg h-full object-cover max-h-[500px]"
           />
           <motion.img
             initial={{
@@ -170,7 +170,7 @@ export default function Gallery() {
             viewport={{ once: true, amount: 0.8 }}
             src={gallery3des}
             alt=""
-            className="col-span-2 rounded-lg h-full object-cover"
+            className="col-span-2 rounded-lg h-full object-cover max-h-[500px]"
           />
         </div>
       </div>

@@ -21,7 +21,7 @@ export default function Navbar() {
           y: -100,
         }}
         transition={{
-          delay: 1,
+          delay: 0.1,
         }}
         animate={{
           y: 0,
@@ -34,23 +34,26 @@ export default function Navbar() {
 
         <ul className="hidden lg:flex gap-7 xl:gap-10 2xl:gap-12 font-medium">
           <li>
-            <Link>Home</Link>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <Link>Product</Link>
+            <Link to="/product">Product</Link>
           </li>
           <li>
-            <Link>About</Link>
+            <Link to="/about">About</Link>
           </li>
           <li>
-            <Link>Contact</Link>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
 
         <div className="flex items-center gap-7">
-          <button className="text-xl">
-            <Link to={"/login"} className="py-2 px-5 border">
-              Login
+          <button className="text-xl relative overflow-hidden group py-2 px-5 border">
+            <Link to={"/login"} className="">
+              <div className="absolute w-full h-full -top-full right-0 group-hover:top-0 transition-all bg-white" />
+              <span className="relative text-white group-hover:text-black">
+                Login
+              </span>
             </Link>
           </button>
 
@@ -93,7 +96,7 @@ export default function Navbar() {
           </li>
           <li className="text-2xl font-medium w-full border">
             <Link
-              to="/?product"
+              to="/product"
               className=" block text-center p-3 hover:bg-[#f2f2f2]"
             >
               Product
@@ -101,7 +104,7 @@ export default function Navbar() {
           </li>
           <li className="text-2xl font-medium w-full border">
             <Link
-              to="/?about"
+              to="/about"
               className=" block text-center p-3 hover:bg-[#f2f2f2]"
             >
               About
@@ -109,7 +112,7 @@ export default function Navbar() {
           </li>
           <li className="text-2xl font-medium w-full border">
             <Link
-              to="/?contact"
+              to="/contact"
               className=" block text-center p-3 hover:bg-[#f2f2f2]"
             >
               Contact

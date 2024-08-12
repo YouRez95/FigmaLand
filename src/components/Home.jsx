@@ -11,7 +11,7 @@ export default function Home() {
           scale: 0,
         }}
         transition={{
-          delay: 1.5,
+          delay: 0.3,
         }}
         animate={{
           scale: 1,
@@ -26,7 +26,7 @@ export default function Home() {
           scale: 0,
         }}
         transition={{
-          delay: 1.5,
+          delay: 0.3,
         }}
         animate={{
           scale: 1,
@@ -43,7 +43,7 @@ export default function Home() {
           scale: 0,
         }}
         transition={{
-          delay: 1.5,
+          delay: 0.3,
         }}
         animate={{
           scale: 1,
@@ -63,7 +63,7 @@ export default function Home() {
             scale: 0,
           }}
           transition={{
-            delay: 2,
+            delay: 0.5,
           }}
           animate={{
             scale: 1,
@@ -78,7 +78,7 @@ export default function Home() {
               scale: 0,
             }}
             transition={{
-              delay: 2.2,
+              delay: 0.6,
             }}
             animate={{
               scale: 1,
@@ -92,7 +92,7 @@ export default function Home() {
               scale: 0,
             }}
             transition={{
-              delay: 2.4,
+              delay: 0.6,
             }}
             animate={{
               scale: 1,
